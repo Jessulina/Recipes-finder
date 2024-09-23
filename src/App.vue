@@ -4,8 +4,8 @@ import { ref } from 'vue'
 
 import ResultsSection from './components/ResultsSection.vue'
 
-const appId = '11dc9b37'; 
-const appKey = '62102ba475f9da330521bb14ff1d40d9'; 
+const appId = import.meta.env.VITE_EDAMAM_APP_ID;
+const appKey = import.meta.env.VITE_EDAMAM_APP_KEY;
 const query = ref('')
 const recipes = ref([])
 const errorMessage = ref('')
