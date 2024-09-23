@@ -1,0 +1,156 @@
+@import './base.css';
+
+:root {
+  --primary-bg-color: linear-gradient(to bottom, #a1907e, #d1d0d1, #f6f7f3);
+  --primary-font-family: 'Open Sans', sans-serif;
+  --heading-font-family: 'Rochester', cursive;
+  --subheading-font-family: 'Lato', sans-serif;
+  --heading-color: #333;
+  --button-bg-color: #ff5722;
+  --button-hover-bg-color: #e64a19;
+  --focus-box-shadow: 0 0 0 2px rgba(45, 45, 121, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--primary-font-family);
+}
+
+body {
+  background: var(--primary-bg-color);
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-section {
+  width: 50%;
+  /*margin-bottom: 2rem;*/
+  z-index: 1;
+
+}
+
+.centered {
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+}
+
+h2 {
+  font-family: var(--subheading-font-family);
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-control {
+  width: 70%;/*450px;*/
+  height: 50px;
+}
+
+.form-control:focus {
+  outline: none;
+  border: none;
+  box-shadow: var(--focus-box-shadow);
+}
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+@media (max-width: 1200px) {
+  .centered {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .search-section {
+    width: 70%;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .search-section {
+    margin-left: 20px;
+    width: 70%;
+  }
+  .centered {
+    margin: 0 auto;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .btn {
+    width: 30%;
+    margin-top: 10px; 
+  }
+}
+@media (max-width: 576px) {
+  .search-section {
+    width: 90%;
+}  
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* TO DO
+work with transitions to present the page (h1 y h2)
+check accesibility for h2 color */
