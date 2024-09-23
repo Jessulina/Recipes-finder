@@ -1,29 +1,21 @@
 # Recipe-finder
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a Recipe Finder implemented using Vue.js, HTML, CSS, and Bootstrap. The goal is to allow users to search for recipes by entering different keywords such as ingredients, type of cuisine, mix of ingredients, proteins, or categories. My primary objective was to practice API interaction and integrate it with Axios.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Recipe Search:** Find recipes by ingredients, cuisine type, or categories.
+- **Responsive Design:** Adaptable layout for different screen sizes.
+- **API Integration:** Fetching data from recipe APIs using Axios.
+- **User-friendly Interface:** Simple and intuitive design for easy navigation.
 
-## Customize configuration
+## Future Improvements
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Accessibility Enhancements:** Make the application more accessible to all users (currently in progress).
+- **Vue Router Integration:** Implement Vue Router for better navigation and routing.
+- **Show More Button:** Complete the configuration of the 'Show More' button for additional recipes.
+- **Favorites Feature:** Allow users to select and save their favorite recipes.
 
-## Project Setup
+## Credits
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+This project was developed by [Jessica Sabrina Elbaum](https://www.linkedin.com/in/jessica-sabrina-elbaum/). If you have any questions or suggestions, feel free to contact me.
